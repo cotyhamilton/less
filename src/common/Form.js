@@ -22,7 +22,7 @@ class Form extends Component {
         });
     }
 
-    // submit function is prop passed in (login, signup, ...)
+    // submit function is prop passed in (login, signup, post, ...)
     submit = (e) => {
         e.preventDefault();
         this.props.submit(this.state);

@@ -10,16 +10,19 @@ class PostList extends Component {
 
     this.state = { posts: [] };
 
+    // get posts on login
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
         this.getAllPosts(user.uid);
       }
+      // remove posts from state on logout
       else {
         this.setState({ posts: [] })
       }
     })
   }
 
+  // grab all userIds the user is following
   getAllPosts = (uid) => {
     firebase.database().ref(`/${uid}/follow/`).on('value', dataSnapshot => {
       let following = dataSnapshot.val();
@@ -29,6 +32,7 @@ class PostList extends Component {
     })
   }
 
+  // grab post from user, update post array in state
   getPost = (uid) => {
     firebase.database().ref(`/${uid}/`).on('value', dataSnapshot => {
       let data = dataSnapshot.val();
@@ -38,6 +42,7 @@ class PostList extends Component {
     })
   }
 
+  // update database with new post when user submits form
   handleSubmit = (data) => {
     let post = (data[''])
     firebase.database().ref(firebase.auth().currentUser.uid + '/post/').set(post);
