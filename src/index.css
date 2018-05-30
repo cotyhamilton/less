@@ -1,0 +1,15 @@
+html {
+  height: 100vh;
+}
+
+.column {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,10 @@
+.Navbar {
+    position: relative;
+    text-align: right;
+}
+
+.menu-icon {
+    background-color: white;
+    font-size: 2em;
+    margin-right: 40px;
+}

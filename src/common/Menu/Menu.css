@@ -1,0 +1,45 @@
+.menu {
+    background-color: #212529;
+    color: white;
+    height: 100vh;
+    left: 0;
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    transition: -webkit-transform .3s cubic-bezier(0, .52, 0, 1);
+    text-align: left;
+    width: 100vw;
+    z-index: 100;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    cursor: pointer;
+    color: white;
+    margin-left: 12vw;
+    margin-top: .45em;
+}
+
+.menu.hide {
+    transform: translate3d(100vw, 0, 0);
+}
+
+.menu.show {
+    transform: translate3d(12vw, 0, 0);
+}
+
+.close-menu {
+    cursor: pointer;
+    position: fixed;
+    right: 25vw;
+    top: .25em;
+}

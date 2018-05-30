@@ -1,0 +1,8 @@
+.postList {
+    margin: auto;
+    padding: 10vh;
+}
+
+.postList form button {
+    margin-top: 6px;
+}

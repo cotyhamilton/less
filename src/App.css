@@ -1,0 +1,62 @@
+.App {
+  box-sizing: border-box;
+  height: 100vh;
+  margin: auto;
+  padding: 0;
+  max-width: 600px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.marketing {
+  margin: 15vw;
+}
+
+.marketing h1 {
+  font-weight: bold;
+}
+
+.less-btn-light {
+  background-color: white;
+  border: 2px solid #212529;
+}
+
+.less-btn-dark {
+  background-color: #212529;
+  border: 2px solid #212529;
+  color: white;
+}
+
+.flex-box {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.profile {
+  margin: auto;
+  padding: 10vh;
+}
