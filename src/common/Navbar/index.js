@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Menu from '../Menu';
 import './Navbar.css';
+import Search from '../Search';
 
 /*
 
@@ -38,7 +39,8 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div className="Navbar">
+      <div className="Navbar form-row align-items-center">
+        <Search />
         {this.state.showMenuButton ?
           <button onClick={this.toggleMenu} className="btn menu-icon">&#9776;</button> :
           null}
